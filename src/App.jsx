@@ -4,7 +4,6 @@ import { ReactComponent as MessengerIcon } from './assets/icons/messenger.svg';
 import { ReactComponent as CaretIcon } from './assets/icons/caret.svg';
 import { ReactComponent as PlusIcon } from './assets/icons/plus.svg';
 
-
 import NavBar from "./components/navbar/navbar.component";
 import NavItem from "./components/nav-item/nav-item.component";
 import DropdownMenu from "./components/dropdown-menu/dropdown-menu.component";
@@ -23,18 +22,5 @@ function App() {
     </NavBar>
   );
 }
-
-// function DropdownMenu() {
-
-//   return (
-//     <div className='dropdown'>
-//       <DropdownItem> My Profile</DropdownItem>
-//       <DropdownItem
-//         leftIcon={ <CogIcon /> }
-//         rightIcon={ <ChevronIcon /> }> </DropdownItem>
-
-//     </div>
-//   );
-// }
 
 export default App;

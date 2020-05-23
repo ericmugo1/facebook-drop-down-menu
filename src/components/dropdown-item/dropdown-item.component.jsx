@@ -1,14 +1,16 @@
 import React from "react";
 import './dropdown-item.styles.css'
 
-const dropdownItem = props => {
+const DropdownItem = props => {
+    const { goToMenu,leftIcon,rightIcon,onChange } = props;
+
     return (
-        <a href="#" className="menu-item" >
-            <span className="icon-button">{ props.leftIcon }</span>
+        <a href="#" className="menu-item" onClick={ () => goToMenu && onChange(goToMenu) }>
+            <span className="icon-button">{ leftIcon }</span>
             { props.children }
-            <span className="icon-right">{ props.rightIcon }</span>
+            <span className="icon-right">{ rightIcon }</span>
         </a>
     );
 }
 
-export default dropdownItem;
+export default DropdownItem;
