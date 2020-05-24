@@ -9,7 +9,6 @@ import { ReactComponent as BoltIcon } from '../../assets/icons/bolt.svg';
 
 import DropdownItem from "../dropdown-item/dropdown-item.component";
 
-
 const DropdownMenu = () => {
     const [activeMenu,setActiveMenu] = useState('main');
     const [menuHeight,setMenuHeight] = useState('null');
